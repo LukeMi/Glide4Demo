@@ -1,4 +1,4 @@
-package com.lukemi.arouter.glide4demo;
+package com.lukemi.glide4demo;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.lukemi.arouter.glide4demo", appContext.getPackageName());
+        assertEquals("com.lukemi.glide4demo", appContext.getPackageName());
     }
 }

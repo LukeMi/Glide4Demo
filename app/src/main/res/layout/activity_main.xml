@@ -6,13 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="glide"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_round"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_default" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/iv_round"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="glide"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toRightOf="@+id/iv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_border_color="#f00"
+        app:riv_border_width="2dip"
+        app:riv_mutate_background="true"
+        app:riv_oval="true"
+        tools:src="@drawable/ic_default" />
+
+    <Button
+        android:id="@+id/btn_load"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="load"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toLeftOf="@+id/btn_dont_animation"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btn_dont_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="don animation"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_load"
+        app:layout_constraintLeft_toRightOf="@+id/btn_load"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.lukemi.arouter.glide4demo;
+package com.lukemi.glide4demo;
 
 import org.junit.Test;
 
